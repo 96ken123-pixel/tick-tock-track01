@@ -217,7 +217,7 @@ window.SPRITES = {
 (function(){
   "use strict";
 
-  const COLS = 5, ROWS = 5, CELL = 70, GAP = 5;
+  const COLS = 5, ROWS = 5, CELL = (window.innerWidth < 420 ? 56 : 70), GAP = 5;
   const START = { col:0, row:4 };
   const SAFE = [ {col:0,row:3}, {col:0,row:2} ];
   let GOAL = { col:2, row:2 };
